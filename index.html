@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevGo - Bots y Automatización en Redes Sociales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          borderRadius: {
+            custom: '15px'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#inicio" class="text-green-600 font-bold text-xl">DevGo</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#inicio" class="nav-link text-gray-700 hover:text-green-600">Inicio</a>
+        <a href="#servicios" class="nav-link text-gray-700 hover:text-green-600">Servicios</a>
+        <a href="#testimonios" class="nav-link text-gray-700 hover:text-green-600">Testimonios</a>
+        <a href="#trabajos" class="nav-link text-gray-700 hover:text-green-600">Trabajos</a>
+        <a href="#faq" class="nav-link text-gray-700 hover:text-green-600">FAQ</a>
+        <a href="#contacto" class="nav-link text-gray-700 hover:text-green-600">Contáctanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INICIO -->
+  <header id="inicio" class="relative h-[90vh] flex items-center justify-center text-white pt-20">
+    <div class="absolute inset-0 w-full h-full bg-black bg-opacity-80"></div>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80" alt="Fondo DevGo" class="absolute inset-0 w-full h-full object-cover opacity-30">
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-green-400">DevGo</h1>
+      <p class="text-xl md:text-2xl">Bots y Automatización en Redes Sociales</p>
+      <p class="mt-2">Responde más rápido. Vende más. Sin esfuerzo.</p>
+      <div class="mt-6">
+        <a href="#servicios" class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition">Ver Servicios</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+<section id="servicios" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Servicios</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="bg-white border border-green-200 p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+      
+      <div class="mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp icon" class="w-10 h-10 mx-auto">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-green-700">WhatsApp Business</h3>
+      <p class="text-sm">Mensajes automáticos, menú interactivo y seguimiento de clientes.</p>
+    </div>
+    <div class="bg-white border border-green-200 p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+      <div class="mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Messenger icon" class="w-10 h-10 mx-auto">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-green-700">Chatbots Messenger</h3>
+      <p class="text-sm">Flujos automatizados para atención 24/7 con ManyChat o Business Suite.</p>
+    </div>
+    <div class="bg-white border border-green-200 p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+      <div class="mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Google Sheets icon" class="w-10 h-10 mx-auto">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-green-700">Google Sheets</h3>
+      <p class="text-sm">Recibe formularios o pedidos directo a hojas organizadas automáticamente.</p>
+    </div>
+    <div class="bg-white border border-green-200 p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+      <div class="mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/1148/1148020.png" alt="Integraciones icon" class="w-10 h-10 mx-auto">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-green-700">Integraciones</h3>
+      <p class="text-sm">Conectamos APIs, CRMs, Firebase y más para potenciar tus automatizaciones.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- TESTIMONIOS SLIDER -->
+  <section id="testimonios" class="bg-gray-50 py-16 px-6">
+    <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Testimonios</h2>
+    <div class="max-w-6xl mx-auto overflow-hidden">
+      <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory pb-4 px-2">
+        <div class="bg-white p-6 rounded-lg shadow min-w-[300px] max-w-sm snap-center">
+          <img src="https://via.placeholder.com/100x50?text=Logo" alt="Logo Ana" class="mb-4 h-12 object-contain mx-auto">
+          <p class="italic">“Gracias a DevGo ahora respondo más rápido y vendo más en mi tienda.”</p>
+          <footer class="mt-4 text-sm font-semibold text-center">– Ana, tienda de ropa</footer>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow min-w-[300px] max-w-sm snap-center">
+          <img src="https://via.placeholder.com/100x50?text=Logo" alt="Logo Juan" class="mb-4 h-12 object-contain mx-auto">
+          <p class="italic">“En menos de 3 días ya tenía mi chatbot funcionando. Recomendado.”</p>
+          <footer class="mt-4 text-sm font-semibold text-center">– Juan, ferretería local</footer>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow min-w-[300px] max-w-sm snap-center">
+          <img src="https://via.placeholder.com/100x50?text=Logo" alt="Logo Lourdes" class="mb-4 h-12 object-contain mx-auto">
+          <p class="italic">“Carlos me armó todo el flujo de WhatsApp, ¡ahora todo se responde solo!”</p>
+          <footer class="mt-4 text-sm font-semibold text-center">– Lourdes, veterinaria</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section id="trabajos" class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Trabajos</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="ropa" class="w-10 h-10 mx-auto mb-2">
+        <p class="mb-2 font-semibold">Tienda de Ropa</p>
+        <p>Chatbot en Messenger con catálogo y respuestas rápidas.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="veterinaria" class="w-10 h-10 mx-auto mb-2">
+        <p class="mb-2 font-semibold">Veterinaria</p>
+        <p>Menú de opciones por WhatsApp con Google Sheets conectado.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="ferretería" class="w-10 h-10 mx-auto mb-2">
+        <p class="mb-2 font-semibold">Ferretería</p>
+        <p>Respuestas automáticas y seguimiento de pedidos en Messenger.</p>
+      </div>
+    </div>
+      <!-- <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+        <p class="mb-2 font-semibold">Veterinaria</p>
+        <p>Menú de opciones por WhatsApp con Google Sheets conectado.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+        <p class="mb-2 font-semibold">Ferretería</p>
+        <p>Respuestas automáticas y seguimiento de pedidos en Messenger.</p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+<section id="faq" class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Preguntas Frecuentes</h2>
+  <div class="space-y-4">
+    <details class="bg-gray-100 p-4 rounded-lg shadow">
+      <summary class="font-semibold cursor-pointer text-green-700">¿Qué necesito para empezar con un bot de WhatsApp?</summary>
+      <p class="mt-2 text-sm">Solo necesitas tener una cuenta de WhatsApp Business. Nosotros nos encargamos del resto.</p>
+    </details>
+    <details class="bg-gray-100 p-4 rounded-lg shadow">
+      <summary class="font-semibold cursor-pointer text-green-700">¿Cuánto tiempo demora en configurarse?</summary>
+      <p class="mt-2 text-sm">En promedio, entre 2 a 4 días dependiendo de la complejidad del flujo.</p>
+    </details>
+    <details class="bg-gray-100 p-4 rounded-lg shadow">
+      <summary class="font-semibold cursor-pointer text-green-700">¿Puedo integrar los bots con mis hojas de cálculo?</summary>
+      <p class="mt-2 text-sm">¡Sí! Podemos vincular tus formularios o respuestas directamente con Google Sheets.</p>
+    </details>
+    <details class="bg-gray-100 p-4 rounded-lg shadow">
+      <summary class="font-semibold cursor-pointer text-green-700">¿Qué plataformas automatizan?</summary>
+      <p class="mt-2 text-sm">Automatizamos en WhatsApp, Facebook Messenger, Instagram y más plataformas sociales.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+  <section id="contacto" class="bg-green-600 text-white py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">¿Listo para automatizar tu negocio?</h2>
+    <p class="mb-6 text-center">Contáctanos para ayudarte a implementar bots y automatizaciones personalizadas.</p>
+    <form class="max-w-2xl mx-auto bg-white text-gray-800 p-8 rounded-custom shadow space-y-6">
+      <input type="text" placeholder="Nombre" class="w-full border border-green-500 px-4 py-3 rounded-custom focus:outline-none">
+      <input type="email" placeholder="Correo" class="w-full border border-green-500 px-4 py-3 rounded-custom focus:outline-none">
+      <input type="tel" placeholder="WhatsApp" class="w-full border border-green-500 px-4 py-3 rounded-custom focus:outline-none">
+      <textarea placeholder="¿Qué necesitas automatizar?" rows="4" class="w-full border border-green-500 px-4 py-3 rounded-custom focus:outline-none resize-none"></textarea>
+      <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition w-full">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p class="text-sm">&copy; 2025 DevGo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = [...document.querySelectorAll('section, header')];
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('text-green-600', 'font-bold');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('text-green-600', 'font-bold');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
